@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>গ্রাম না গাঁজা।</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stage">
+
+    <header class="topbar">
+      <a href="index.html" class="title-link" aria-label="রিলোড করো">
+        <h1 class="title">গ্রাম <span class="title-vs">না</span> গাঁজা<span class="title-dot">।</span></h1>
+      </a>
+      <div class="scores">
+        <div class="score-box">
+          <span class="score-label">স্ট্রিক</span>
+          <span class="score-value" id="streakVal">０</span>
+        </div>
+        <div class="score-box score-box--best">
+          <span class="score-label">সেরা</span>
+          <span class="score-value" id="bestVal">０</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="board" id="board">
+
+      <button class="half half--gram" id="btnGram" aria-label="গ্রাম - আসল নাম">
+        <span class="half-word">গ্রাম</span>
+        <span class="half-hint">আসল নাম</span>
+      </button>
+
+      <button class="half half--ganja" id="btnGanja" aria-label="গাঁজা - বানানো নাম">
+        <span class="half-word">গাঁজা</span>
+        <span class="half-hint">বানানো নাম</span>
+      </button>
+
+      <div class="mid">
+        <div class="place-card" id="placeCard">
+          <p class="place-name" id="placeName">লোড হচ্ছে…</p>
+          <p class="place-reveal" id="placeReveal"></p>
+        </div>
+      </div>
+
+    </main>
+
+
+
+    <p class="instructions">ট্যাপ করো অথবা কীবোর্ডে ← গ্রাম &nbsp;|&nbsp; গাঁজা →</p>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <img src="watermark.png" alt="" class="watermark" aria-hidden="true">
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
